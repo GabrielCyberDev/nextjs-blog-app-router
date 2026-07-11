@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "slug": "introducao-nextjs-15",
+    "title": "Introdução ao Next.js 15",
+    "category": "Fundamentos",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Conheça os principais recursos da versão 15 do Next.js.",
+    "content": "O Next.js 15 é um framework React desenvolvido pela Vercel que facilita a criação de aplicações web modernas. Ele oferece renderização híbrida, App Router, Server Components, otimizações automáticas, SEO aprimorado e excelente desempenho. Sua integração com React torna o desenvolvimento mais produtivo e escalável."
+  },
+  {
+    "id": 2,
+    "slug": "react-vs-nextjs",
+    "title": "React vs Next.js",
+    "category": "Fundamentos",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Entenda as diferenças entre React e Next.js.",
+    "content": "React é uma biblioteca para criação de interfaces. Next.js é um framework baseado em React que adiciona roteamento, renderização no servidor, otimização de imagens, SEO, App Router, Server Components e várias funcionalidades prontas para produção."
+  },
+  {
+    "id": 3,
+    "slug": "estrutura-projeto-nextjs",
+    "title": "Estrutura de um Projeto Next.js",
+    "category": "Fundamentos",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Conheça a organização das principais pastas.",
+    "content": "Uma aplicação Next.js normalmente possui as pastas app, public, components, lib e data. Essa organização melhora a manutenção do projeto, facilita a reutilização de componentes e torna o código mais limpo."
+  },
+  {
+    "id": 4,
+    "slug": "app-router",
+    "title": "Entendendo o App Router",
+    "category": "Roteamento",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Como funciona o novo sistema de rotas.",
+    "content": "O App Router utiliza a estrutura de pastas para criar rotas automaticamente. Cada diretório representa uma rota e arquivos especiais como page.tsx, layout.tsx e loading.tsx adicionam funcionalidades sem necessidade de configuração extra."
+  },
+  {
+    "id": 5,
+    "slug": "layouts-e-templates",
+    "title": "Layouts e Templates",
+    "category": "Roteamento",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Reutilizando estruturas entre páginas.",
+    "content": "Layouts permitem compartilhar cabeçalhos, menus, rodapés e outros elementos entre várias páginas. Isso evita duplicação de código e melhora a organização do projeto."
+  },
+  {
+    "id": 6,
+    "slug": "rotas-dinamicas-nextjs",
+    "title": "Rotas Dinâmicas no Next.js",
+    "category": "Roteamento",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Criando páginas com parâmetros dinâmicos.",
+    "content": "As rotas dinâmicas utilizam pastas como [slug] para gerar páginas diferentes utilizando um único arquivo. Essa técnica é muito utilizada em blogs, e-commerces e sistemas de gerenciamento de conteúdo."
+  },
+  {
+    "id": 7,
+    "slug": "server-components",
+    "title": "Server Components",
+    "category": "Renderização",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Renderização realizada no servidor.",
+    "content": "Server Components executam diretamente no servidor, permitindo acesso a bancos de dados e APIs sem expor lógica ao navegador. Eles também reduzem o JavaScript enviado ao cliente."
+  },
+  {
+    "id": 8,
+    "slug": "client-components",
+    "title": "Client Components",
+    "category": "Renderização",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Quando utilizar Client Components.",
+    "content": "Client Components são utilizados quando a página precisa de interatividade utilizando hooks como useState, useEffect ou manipulação direta de eventos do navegador."
+  },
+  {
+    "id": 9,
+    "slug": "data-fetching-server-components",
+    "title": "Data Fetching em Server Components",
+    "category": "Renderização",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Buscando dados diretamente no servidor.",
+    "content": "No App Router podemos utilizar funções assíncronas diretamente nas páginas. Isso elimina a necessidade de useEffect para carregar dados e melhora a experiência do usuário."
+  },
+  {
+    "id": 10,
+    "slug": "ssg-generate-static-params",
+    "title": "SSG com generateStaticParams",
+    "category": "Renderização",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Gerando páginas estáticas automaticamente.",
+    "content": "A função generateStaticParams informa ao Next.js quais páginas dinâmicas devem ser geradas durante o build. Isso melhora o desempenho e reduz o tempo de carregamento."
+  },
+  {
+    "id": 11,
+    "slug": "ssr-nextjs",
+    "title": "Renderização Dinâmica (SSR)",
+    "category": "Renderização",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Entenda quando utilizar SSR.",
+    "content": "No SSR a página é gerada a cada requisição, permitindo exibir informações sempre atualizadas. Essa estratégia é indicada para aplicações com dados que mudam frequentemente."
+  },
+  {
+    "id": 12,
+    "slug": "seo-generate-metadata",
+    "title": "SEO com generateMetadata",
+    "category": "SEO",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Criando metadados dinâmicos para cada página.",
+    "content": "A função generateMetadata permite gerar títulos, descrições e outras informações importantes para mecanismos de busca. Cada artigo pode possuir SEO personalizado automaticamente."
+  },
+  {
+    "id": 13,
+    "slug": "navegacao-com-link",
+    "title": "Navegação com Link",
+    "category": "Navegação",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Navegação otimizada utilizando o componente Link.",
+    "content": "O componente Link realiza navegação entre páginas sem recarregar toda a aplicação, oferecendo uma experiência muito mais rápida ao usuário."
+  },
+  {
+    "id": 14,
+    "slug": "pagina-not-found",
+    "title": "Página 404 Personalizada",
+    "category": "Tratamento de Erros",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Criando uma página para rotas inexistentes.",
+    "content": "O arquivo not-found.tsx permite exibir uma página personalizada sempre que uma rota não existir. Isso melhora a experiência do usuário e torna a aplicação mais profissional."
+  },
+  {
+    "id": 15,
+    "slug": "deploy-vercel",
+    "title": "Deploy na Vercel",
+    "category": "Deploy",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Publicando aplicações Next.js.",
+    "content": "A Vercel é a plataforma oficial do Next.js. Basta conectar o repositório do GitHub para que cada novo push gere automaticamente uma nova versão publicada."
+  },
+  {
+    "id": 16,
+    "slug": "boas-praticas-nextjs",
+    "title": "Boas Práticas em Projetos Next.js",
+    "category": "Arquitetura",
+    "author": "Gabriel Costa",
+    "date": "2026-07-10",
+    "description": "Organização, reutilização e manutenção.",
+    "content": "Projetos profissionais utilizam componentes reutilizáveis, separação de responsabilidades, tipagem com TypeScript, organização por pastas e padronização de código para facilitar a evolução da aplicação."
+  }
+]

@@ -1,36 +1,225 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Blog App Router
 
-## Getting Started
+Blog desenvolvido com **Next.js 15**, utilizando **App Router**, **Server Components**, **rotas dinâmicas**, **SEO dinâmico** e geração estática de páginas.
 
-First, run the development server:
+O projeto foi desenvolvido com o objetivo de praticar os principais conceitos do desenvolvimento moderno utilizando Next.js.
+
+---
+
+## 🚀 Demonstração
+
+Aplicação publicada na Vercel:
+
+```
+COLOCAR_LINK_DA_VERCEL_AQUI
+```
+
+---
+
+## 📌 Sobre o projeto
+
+O Next.js Blog é uma aplicação de blog onde os artigos são carregados dinamicamente através de um arquivo JSON local.
+
+Cada artigo possui uma rota própria utilizando rotas dinâmicas do App Router.
+
+Exemplo:
+
+```
+/artigos/introducao-nextjs-15
+```
+
+Cada página possui metadados próprios gerados dinamicamente para melhorar SEO.
+
+---
+
+# Funcionalidades
+
+- Listagem de artigos na página inicial
+- Rotas dinâmicas utilizando `[slug]`
+- Busca de dados através de JSON local
+- Server Components
+- Geração estática com `generateStaticParams`
+- SEO dinâmico utilizando `generateMetadata`
+- Página personalizada para conteúdo inexistente
+- Loading state para carregamento de páginas
+- Layout responsivo
+
+---
+
+# Tecnologias utilizadas
+
+## Front-end
+
+- Next.js 15
+- React 19
+- TypeScript
+- HTML5
+- CSS3
+
+## Recursos Next.js
+
+- App Router
+- Server Components
+- Dynamic Routes
+- Static Site Generation (SSG)
+- generateStaticParams
+- generateMetadata
+- next/image
+- next/link
+
+## Ferramentas
+
+- Node.js
+- NPM
+- Git
+- GitHub
+- Vercel
+
+---
+
+# Estrutura do projeto
+
+```
+nextjs-blog-app-router
+
+├── app
+│   ├── artigos
+│   │   └── [slug]
+│   │       ├── page.tsx
+│   │       └── loading.tsx
+│   │
+│   ├── page.tsx
+│   ├── layout.tsx
+│   ├── globals.css
+│   └── not-found.tsx
+│
+├── data
+│   └── artigos.json
+│
+├── lib
+│   └── articles.ts
+│
+├── public
+│
+├── package.json
+└── README.md
+```
+
+---
+
+# Conceitos aplicados
+
+## App Router
+
+O projeto utiliza o sistema moderno de rotas do Next.js baseado na estrutura de pastas.
+
+---
+
+## Server Components
+
+As páginas utilizam componentes executados no servidor, evitando buscas desnecessárias no cliente.
+
+---
+
+## Rotas Dinâmicas
+
+Os artigos são gerados através da rota:
+
+```
+app/artigos/[slug]/page.tsx
+```
+
+permitindo criar páginas individuais para cada conteúdo.
+
+---
+
+## Static Site Generation
+
+A função:
+
+```
+generateStaticParams()
+```
+
+gera previamente as páginas dos artigos durante o build.
+
+---
+
+## SEO Dinâmico
+
+Cada artigo possui:
+
+- title personalizado
+- description personalizada
+
+utilizando:
+
+```
+generateMetadata()
+```
+
+---
+
+# Como executar o projeto
+
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
+```
+
+Entre na pasta:
+
+```bash
+cd nextjs-blog-app-router
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o projeto:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+# Build de produção
 
-To learn more about Next.js, take a look at the following resources:
+Gerar build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Executar versão de produção:
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Deploy
+
+O projeto foi publicado utilizando a plataforma Vercel.
+
+A cada atualização enviada para o GitHub, um novo deploy pode ser realizado automaticamente.
+
+---
+
+# Autor
+
+Gabriel Costa
+
+Projeto desenvolvido para prática de desenvolvimento avançado utilizando Next.js 15.
