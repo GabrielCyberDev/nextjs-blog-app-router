@@ -92,7 +92,15 @@ nextjs-blog-app-router
 │   ├── layout.tsx
 │   ├── globals.css
 │   └── not-found.tsx
-│
+
+├── components
+│   ├── ArticleCard.tsx
+│   ├── Badge.tsx
+│   ├── Container.tsx
+│   ├── EmptyState.tsx
+│   ├── Footer.tsx
+│   └── Header.tsx
+
 ├── data
 │   └── artigos.json
 │
