@@ -24,7 +24,7 @@ export default function Header() {
 
 
           <a
-            href="https://github.com/"
+            href="https://github.com/GabrielCyberDev/nextjs-blog-app-router"
             target="_blank"
             rel="noopener noreferrer"
           >
