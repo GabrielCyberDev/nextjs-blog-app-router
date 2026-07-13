@@ -11,7 +11,7 @@ O projeto foi desenvolvido com o objetivo de praticar os principais conceitos do
 Aplicação publicada na Vercel:
 
 ```
-COLOCAR_LINK_DA_VERCEL_AQUI
+https://nextjs-blog-app-router.vercel.app
 ```
 
 ---
@@ -173,7 +173,7 @@ generateMetadata()
 Clone o repositório:
 
 ```bash
-git clone URL_DO_REPOSITORIO
+https://github.com/GabrielCyberDev/nextjs-blog-app-router
 ```
 
 Entre na pasta:
@@ -220,10 +220,42 @@ npm start
 
 # Deploy
 
-O projeto foi publicado utilizando a plataforma Vercel.
+O projeto está publicado na Vercel e integrado ao GitHub através de uma pipeline de CI/CD utilizando GitHub Actions.
 
-A cada atualização enviada para o GitHub, um novo deploy pode ser realizado automaticamente.
+## Links
 
+Aplicação:
+
+https://nextjs-blog-app-router.vercel.app/
+
+Repositório:
+
+https://github.com/GabrielCyberDev/nextjs-blog-app-router
+
+GitHub Actions:
+
+https://github.com/GabrielCyberDev/nextjs-blog-app-router/actions
+
+## Pipeline
+
+A cada push ou Pull Request para a branch `main`, o GitHub Actions executa automaticamente:
+
+- Instalação das dependências (`npm ci`)
+- Análise de código (`npm run lint`)
+- Execução dos testes (`npm test`)
+- Build da aplicação (`npm run build`)
+
+Caso todas as etapas sejam concluídas com sucesso, o workflow libera o job de deploy responsável pela publicação automática na Vercel.
+
+## Secrets utilizados
+
+Para que o deploy automático funcione corretamente, os seguintes secrets devem estar configurados no repositório GitHub:
+
+- `VERCEL_TOKEN`
+- `VERCEL_ORG_ID`
+- `VERCEL_PROJECT_ID`
+
+Esses secrets permitem que o GitHub Actions autentique na Vercel e publique automaticamente uma nova versão da aplicação.
 ---
 
 # Autor
